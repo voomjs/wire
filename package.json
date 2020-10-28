@@ -1,7 +1,7 @@
 {
   "name": "@voom/wire",
   "description": "Absolute paths for Hapi",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": "git://github.com/voomjs/wire",
   "main": "lib/index.js",
