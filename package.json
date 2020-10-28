@@ -1,0 +1,35 @@
+{
+  "name": "@voom/wire",
+  "description": "Absolute paths for Hapi",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "git://github.com/voomjs/wire",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "hapi",
+    "plugin",
+    "absolute",
+    "imports",
+    "paths"
+  ],
+  "devDependencies": {
+    "@hapi/code": "8.x.x",
+    "@hapi/lab": "24.x.x",
+    "sinon": "9.x.x",
+    "standard": "15.x.x"
+  },
+  "scripts": {
+    "test": "lab",
+    "test-html": "lab -r html -o coverage.html",
+    "lint": "standard --fix"
+  },
+  "standard": {
+    "env": [
+      "es6",
+      "node"
+    ]
+  }
+}
