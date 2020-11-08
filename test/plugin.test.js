@@ -68,4 +68,13 @@ describe('plugin', function () {
     expect(Plugin.storage('module')).to.be.equal(Plugin.root('storage/module'))
     expect(Plugin.storage('module')).to.be.equal(Plugin.root('storage', 'module'))
   })
+
+  it('returns the absolute path', function () {
+    const path = (...paths) => Path.join(__dirname, ...paths)
+
+    expect(Plugin.base()).to.be.equal(path('lib'))
+    expect(Plugin.base('resources')).to.be.equal(path('lib/resources'))
+    expect(Plugin.base('resources/views')).to.be.equal(path('lib/resources/views'))
+    expect(Plugin.base('resources', 'views')).to.be.equal(path('lib/resources/views'))
+  })
 })
