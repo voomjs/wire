@@ -10,3 +10,6 @@ coverage.*
 **/.vs
 **/.vscode
 **/.idea
+
+.env
+.env.test
